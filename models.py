@@ -27,3 +27,9 @@ class Trash(Base):
     score = Column(Integer, nullable=False, default=10)
     type_2_seq = Column(JSON)
     type_2_seq_ans = Column(JSON)
+
+
+class comment(Base):
+    __tablename__ = "comment"
+
+    comments = Column(JSON)
