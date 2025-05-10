@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, JSON
 from database import Base
 
 class User(Base):
@@ -17,6 +17,13 @@ class Trash(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
-    category = Column(String, nullable=False)
+    nickname = Column(String, nullable=False)    
+    correctBin = Column(String, nullable=False)
+    specificBin = Column(String, nullable=False)
+    messageInitial = Column(String, nullable=False)   
+    messageCorrect = Column(String, nullable=False)    
+    messageInCorrect = Column(String, nullable=False)         
     difficulty = Column(Integer, nullable=False, default=1)
     score = Column(Integer, nullable=False, default=10)
+    type_2_seq = Column(JSON)
+    type_2_seq_ans = Column(JSON)
