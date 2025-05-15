@@ -25,6 +25,7 @@ class Trash(Base):
     messageInCorrect = Column(String, nullable=False)         
     difficulty = Column(Integer, nullable=False, default=1)
     score = Column(Integer, nullable=False, default=10)
+    image_key = Column(String, nullable=False) # 각 아이템이 사용할 이미지 파일의 경로(예: "avatars/123.png")를 DB에 채워 넣어야 함
     type_2_seq = Column(JSON)
     type_2_seq_ans = Column(JSON)
 
