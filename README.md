@@ -9,6 +9,14 @@ Backend
 - 문서화 도구: **Swagger UI (FastAPI 기본 제공)** – API 명세 자동화 및 테스트 지원
 
 
+🖥️ Deployment
+
+- **Backend**: **AWS Lightsail** (Ubuntu 인스턴스에 FastAPI 서버 배포 및 포트 개방 설정)  
+- AWS Lightsail 인스턴스를 활용해 FastAPI 백엔드 서버를 Ubuntu 환경에 배포  
+- Gunicorn + Uvicorn을 사용한 프로덕션 서버 구동  
+- 8000번 포트 개방 후, 외부에서 API 접근 가능하도록 설정
+
+
 
 
 
