@@ -17,10 +17,6 @@ Backend
 - 8000번 포트 개방 후, 외부에서 API 접근 가능하도록 설정
 
 
-
-
-
-
 ```
 📁 backend/
 ├── domain/
@@ -36,4 +32,10 @@ Backend
 ├── test.db                   # SQLite 실제 데이터베이스 파일
 ├── test.sqbpro               # DB 시각화 툴(SQLite Browser 등) 프로젝트 파일
 ```
+
+
+🧩 Game 관련 모듈
+- `game_router.py`, `game_schema.py`, `game_service.py`는 게임 기능 구현을 위한 라우터 및 서비스 로직 파일입니다.
+- 해당 기능은 추후 Trash 모델과 함께 업그레이드될 예정이며, 현재는 기본 구조만 구현되어 있습니다.
+- `models.py` 내부의 `Trash` 모델 역시 향후 게임 결과와의 연동 및 분류 기록 저장 등의 기능을 위해 사용될 계획입니다.
 
